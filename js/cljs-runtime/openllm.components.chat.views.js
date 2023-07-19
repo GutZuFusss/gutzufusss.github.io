@@ -7,8 +7,8 @@ goog.provide('openllm.components.chat.views');
  */
 openllm.components.chat.views.chat_input_field = (function openllm$components$chat$views$chat_input_field(on_submit){
 var chat_input_sub = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.subs","chat-input-value","openllm.components.chat.subs/chat-input-value",-1630109332)], null));
-var on_change = (function (p1__28659_SHARP_){
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.events","set-chat-input-value","openllm.components.chat.events/set-chat-input-value",990254050),p1__28659_SHARP_.target.value], null));
+var on_change = (function (p1__28671_SHARP_){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.events","set-chat-input-value","openllm.components.chat.events/set-chat-input-value",990254050),p1__28671_SHARP_.target.value], null));
 });
 return (function (){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"textarea","textarea",-650375824),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"class","class",-2030961996),"py-1 h-20 w-[calc(100%_-_80px)] block",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"resize","resize",297367086),"none"], null),new cljs.core.Keyword(null,"placeholder","placeholder",-104873083),"Type your message...",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref(chat_input_sub),new cljs.core.Keyword(null,"on-change","on-change",-732046149),on_change,new cljs.core.Keyword(null,"on-key-press","on-key-press",-399563677),(function (e){
@@ -59,11 +59,11 @@ return ["whitespace-pre-wrap ",((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(us
  * Will be used as a mapping function in the `chat-history` function. The collection
  * being mapped is the entire chat history.
  */
-openllm.components.chat.views.chat_message_entry = (function openllm$components$chat$views$chat_message_entry(p__28660){
-var map__28661 = p__28660;
-var map__28661__$1 = cljs.core.__destructure_map(map__28661);
-var user = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28661__$1,new cljs.core.Keyword(null,"user","user",1532431356));
-var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28661__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
+openllm.components.chat.views.chat_message_entry = (function openllm$components$chat$views$chat_message_entry(p__28672){
+var map__28673 = p__28672;
+var map__28673__$1 = cljs.core.__destructure_map(map__28673);
+var user = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28673__$1,new cljs.core.Keyword(null,"user","user",1532431356));
+var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28673__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
 var display_user = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(user,new cljs.core.Keyword(null,"model","model",331153215)))?"System":"You");
 var alignment = ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(user,new cljs.core.Keyword(null,"model","model",331153215)))?"flex-row":"flex-row-reverse");
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),["flex ",alignment," items-end my-2 w-full"].join('')], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3","h3",2067611163),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"font-bold text-lg mx-2"], null),display_user], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),openllm.components.chat.views.user__GT_bubble_style(user)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),openllm.components.chat.views.user__GT_text_style(user)], null),text], null)], null)], null);
@@ -86,8 +86,8 @@ return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVect
 openllm.components.chat.views.prompt_layout_modal = (function openllm$components$chat$views$prompt_layout_modal(){
 var modal_open_QMARK_ = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.subs","modal-open?","openllm.components.chat.subs/modal-open?",2097497535)], null));
 var prompt_layout_value = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.subs","prompt-layout","openllm.components.chat.subs/prompt-layout",-1833402282)], null));
-var on_change = (function (p1__28662_SHARP_){
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.events","set-prompt-layout","openllm.components.chat.events/set-prompt-layout",-1573538316),p1__28662_SHARP_.target.value], null));
+var on_change = (function (p1__28674_SHARP_){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.chat.events","set-prompt-layout","openllm.components.chat.events/set-prompt-layout",-1573538316),p1__28674_SHARP_.target.value], null));
 });
 return (function (){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.modal.modal,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"open","open",-1763596448),cljs.core.deref(modal_open_QMARK_),new cljs.core.Keyword(null,"on-close","on-close",-761178394),(function (){
