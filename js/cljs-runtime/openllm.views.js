@@ -5,9 +5,9 @@ goog.provide('openllm.views');
  * based on the current screen-id.
  */
 openllm.views.tab_content = (function openllm$views$tab_content(screen_id){
-var G__29681 = screen_id;
-var G__29681__$1 = (((G__29681 instanceof cljs.core.Keyword))?G__29681.fqn:null);
-switch (G__29681__$1) {
+var G__28576 = screen_id;
+var G__28576__$1 = (((G__28576 instanceof cljs.core.Keyword))?G__28576.fqn:null);
+switch (G__28576__$1) {
 case "playground":
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [openllm.components.playground.views.playground_tab_contents], null);
 
@@ -17,7 +17,7 @@ return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMP
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__29681__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__28576__$1)].join('')));
 
 }
 });
