@@ -1,12 +1,12 @@
 goog.provide('reagent_mui.icons.expand_more');
 var module$node_modules$react$index=shadow.js.require("module$node_modules$react$index", {});
 var module$node_modules$$mui$material$node$SvgIcon$index=shadow.js.require("module$node_modules$$mui$material$node$SvgIcon$index", {});
-reagent_mui.icons.expand_more.expand_more = (function (){var component__28462__auto__ = module$node_modules$react$index.memo(module$node_modules$react$index.forwardRef((function reagent_mui$icons$expand_more$ExpandMore(props__28463__auto__,ref__28464__auto__){
-return module$node_modules$react$index.createElement(module$node_modules$$mui$material$node$SvgIcon$index.default,Object.assign((function (){var obj28674 = ({"ref":ref__28464__auto__});
-return obj28674;
-})(),props__28463__auto__),module$node_modules$react$index.createElement("path",({"d": "M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"})));
+reagent_mui.icons.expand_more.expand_more = (function (){var component__39939__auto__ = module$node_modules$react$index.memo(module$node_modules$react$index.forwardRef((function reagent_mui$icons$expand_more$ExpandMore(props__39940__auto__,ref__39941__auto__){
+return module$node_modules$react$index.createElement(module$node_modules$$mui$material$node$SvgIcon$index.default,Object.assign((function (){var obj40104 = ({"ref":ref__39941__auto__});
+return obj40104;
+})(),props__39940__auto__),module$node_modules$react$index.createElement("path",({"d": "M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"})));
 })));
-return reagent.core.adapt_react_class(component__28462__auto__);
+return reagent.core.adapt_react_class(component__39939__auto__);
 })();
 
 //# sourceMappingURL=reagent_mui.icons.expand_more.js.map

@@ -6,8 +6,8 @@ goog.provide('openllm.components.side_bar.model_params.views');
 openllm.components.side_bar.model_params.views.parameter_slider = (function openllm$components$side_bar$model_params$views$parameter_slider(id,value){
 var min_max = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.db.parameter_meta_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"val-constraint","val-constraint",-1665060530)], null));
 var num_type_QMARK_ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.int_QMARK_,cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.db.parameter_meta_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"type-pred","type-pred",670733862)], null)));
-var on_change = (function (p1__32001_SHARP_){
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.events","set-model-config-parameter","openllm.components.side-bar.model-params.events/set-model-config-parameter",1676339857),id,p1__32001_SHARP_.target.value], null));
+var on_change = (function (p1__40105_SHARP_){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.events","set-model-config-parameter","openllm.components.side-bar.model-params.events/set-model-config-parameter",1676339857),id,p1__40105_SHARP_.target.value], null));
 });
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"flex flex-row items-center w-full"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"type","type",1174270348),"range",new cljs.core.Keyword(null,"min","min",444991522),cljs.core.first(min_max),new cljs.core.Keyword(null,"max","max",61366548),cljs.core.second(min_max),new cljs.core.Keyword(null,"step","step",1288888124),((num_type_QMARK_)?(1):0.01),new cljs.core.Keyword(null,"value","value",305978217),value,new cljs.core.Keyword(null,"class","class",-2030961996),"w-full mt-2 mb-1",new cljs.core.Keyword(null,"on-change","on-change",-732046149),on_change], null)], null)], null);
 });
@@ -16,8 +16,8 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
  * needs to be revamped big time xx
  */
 openllm.components.side_bar.model_params.views.parameter_small_input = (function openllm$components$side_bar$model_params$views$parameter_small_input(id,value){
-var on_change = (function (p1__32002_SHARP_){
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.events","set-model-config-parameter","openllm.components.side-bar.model-params.events/set-model-config-parameter",1676339857),id,p1__32002_SHARP_.target.value], null));
+var on_change = (function (p1__40106_SHARP_){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.events","set-model-config-parameter","openllm.components.side-bar.model-params.events/set-model-config-parameter",1676339857),id,p1__40106_SHARP_.target.value], null));
 });
 var num_type_QMARK_ = cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.int_QMARK_,cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.db.parameter_meta_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"type-pred","type-pred",670733862)], null)));
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.input.input,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"class","class",-2030961996),"w-10 text-center border",new cljs.core.Keyword(null,"input-props","input-props",-1504868202),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center",new cljs.core.Keyword(null,"background-color","background-color",570434026),"#ffffff",new cljs.core.Keyword(null,"height","height",1025178622),"12px"], null)], null),new cljs.core.Keyword(null,"step","step",1288888124),((num_type_QMARK_)?(1):0.01),new cljs.core.Keyword(null,"value","value",305978217),value,new cljs.core.Keyword(null,"on-change","on-change",-732046149),on_change], null)], null);
@@ -34,34 +34,34 @@ return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.co
  * Renders a number input field.
  */
 openllm.components.side_bar.model_params.views.parameter_number = (function openllm$components$side_bar$model_params$views$parameter_number(id,value){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.input.input,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"class","class",-2030961996),"w-16 border",new cljs.core.Keyword(null,"value","value",305978217),value,new cljs.core.Keyword(null,"input-props","input-props",-1504868202),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"2px",new cljs.core.Keyword(null,"background-color","background-color",570434026),"#ffffff",new cljs.core.Keyword(null,"height","height",1025178622),"24px"], null)], null),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__32003_SHARP_){
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.events","set-model-config-parameter","openllm.components.side-bar.model-params.events/set-model-config-parameter",1676339857),id,cljs.core.parse_long(p1__32003_SHARP_.target.value)], null));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.input.input,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"type","type",1174270348),"number",new cljs.core.Keyword(null,"class","class",-2030961996),"w-16 border",new cljs.core.Keyword(null,"value","value",305978217),value,new cljs.core.Keyword(null,"input-props","input-props",-1504868202),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"padding","padding",1660304693),"2px",new cljs.core.Keyword(null,"background-color","background-color",570434026),"#ffffff",new cljs.core.Keyword(null,"height","height",1025178622),"24px"], null)], null),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__40107_SHARP_){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.events","set-model-config-parameter","openllm.components.side-bar.model-params.events/set-model-config-parameter",1676339857),id,cljs.core.parse_long(p1__40107_SHARP_.target.value)], null));
 })], null)], null);
 });
 /**
  * Renders a single parameter in the sidebar's parameter list. Used as a mapping function
  * on the collection of all parameters.
  */
-openllm.components.side_bar.model_params.views.parameter_list_entry = (function openllm$components$side_bar$model_params$views$parameter_list_entry(p__32004){
-var vec__32005 = p__32004;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32005,(0),null);
-var map__32008 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32005,(1),null);
-var map__32008__$1 = cljs.core.__destructure_map(map__32008);
-var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__32008__$1,new cljs.core.Keyword(null,"value","value",305978217));
-var name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__32008__$1,new cljs.core.Keyword(null,"name","name",1843675177));
+openllm.components.side_bar.model_params.views.parameter_list_entry = (function openllm$components$side_bar$model_params$views$parameter_list_entry(p__40108){
+var vec__40109 = p__40108;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40109,(0),null);
+var map__40112 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40109,(1),null);
+var map__40112__$1 = cljs.core.__destructure_map(map__40112);
+var value = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40112__$1,new cljs.core.Keyword(null,"value","value",305978217));
+var name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40112__$1,new cljs.core.Keyword(null,"name","name",1843675177));
 var display_type = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.db.parameter_meta_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"display-type","display-type",-749971179)], null));
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"flex flex-col px-2 pt-1"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"flex w-full text-xs justify-between"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"self-center"], null),name], null),(function (){var pred__32009 = cljs.core._EQ_;
-var expr__32010 = display_type;
-if(cljs.core.truth_((pred__32009.cljs$core$IFn$_invoke$arity$2 ? pred__32009.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"slider","slider",-472668865),expr__32010) : pred__32009.call(null,new cljs.core.Keyword(null,"slider","slider",-472668865),expr__32010)))){
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"flex flex-col px-2 pt-1"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"flex w-full text-xs justify-between"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"self-center"], null),name], null),(function (){var pred__40113 = cljs.core._EQ_;
+var expr__40114 = display_type;
+if(cljs.core.truth_((pred__40113.cljs$core$IFn$_invoke$arity$2 ? pred__40113.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"slider","slider",-472668865),expr__40114) : pred__40113.call(null,new cljs.core.Keyword(null,"slider","slider",-472668865),expr__40114)))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [openllm.components.side_bar.model_params.views.parameter_small_input,id,value], null);
 } else {
-if(cljs.core.truth_((pred__32009.cljs$core$IFn$_invoke$arity$2 ? pred__32009.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"binary","binary",-1802232288),expr__32010) : pred__32009.call(null,new cljs.core.Keyword(null,"binary","binary",-1802232288),expr__32010)))){
+if(cljs.core.truth_((pred__40113.cljs$core$IFn$_invoke$arity$2 ? pred__40113.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"binary","binary",-1802232288),expr__40114) : pred__40113.call(null,new cljs.core.Keyword(null,"binary","binary",-1802232288),expr__40114)))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [openllm.components.side_bar.model_params.views.parameter_checkbox,id,value], null);
 } else {
-if(cljs.core.truth_((pred__32009.cljs$core$IFn$_invoke$arity$2 ? pred__32009.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"field","field",-1302436500),expr__32010) : pred__32009.call(null,new cljs.core.Keyword(null,"field","field",-1302436500),expr__32010)))){
+if(cljs.core.truth_((pred__40113.cljs$core$IFn$_invoke$arity$2 ? pred__40113.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"field","field",-1302436500),expr__40114) : pred__40113.call(null,new cljs.core.Keyword(null,"field","field",-1302436500),expr__40114)))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [openllm.components.side_bar.model_params.views.parameter_number,id,value], null);
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__32010)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(expr__40114)].join('')));
 }
 }
 }
@@ -74,16 +74,16 @@ throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$ari
 openllm.components.side_bar.model_params.views.parameter_list = (function openllm$components$side_bar$model_params$views$parameter_list(){
 var model_config = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.subs","human-readable-config","openllm.components.side-bar.model-params.subs/human-readable-config",215692576)], null));
 return (function (){
-var basic_params = cljs.core.filterv((function (p__32012){
-var vec__32013 = p__32012;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32013,(0),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32013,(1),null);
+var basic_params = cljs.core.filterv((function (p__40116){
+var vec__40117 = p__40116;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40117,(0),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40117,(1),null);
 return cljs.core.not(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.db.parameter_meta_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"advanced-opt","advanced-opt",1252488754)], null)));
 }),cljs.core.deref(model_config));
-var advanced_params = cljs.core.filterv((function (p__32016){
-var vec__32017 = p__32016;
-var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32017,(0),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__32017,(1),null);
+var advanced_params = cljs.core.filterv((function (p__40120){
+var vec__40121 = p__40120;
+var id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40121,(0),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40121,(1),null);
 return cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.db.parameter_meta_data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [id,new cljs.core.Keyword(null,"advanced-opt","advanced-opt",1252488754)], null));
 }),cljs.core.deref(model_config));
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386)], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.views.parameter_list_entry,basic_params)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"mt-2 -mx-1.75"], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.accordion.accordion,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"square","square",812434677),true,new cljs.core.Keyword(null,"class","class",-2030961996),"w-full",new cljs.core.Keyword(null,"elevation","elevation",-1609348796),(0),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"background-color","background-color",570434026),"#fafafa"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.accordion_summary.accordion_summary,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"expand-icon","expand-icon",563490473),reagent.core.as_element.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.icons.expand_more.expand_more], null))], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.typography.typography,"Advanced"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent_mui.material.accordion_details.accordion_details,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"-mt-1.5 -mx-3"], null),cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386)], null),cljs.core.map.cljs$core$IFn$_invoke$arity$2(openllm.components.side_bar.model_params.views.parameter_list_entry,advanced_params))], null)], null)], null)], null);

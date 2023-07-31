@@ -6,6 +6,19 @@ shadow.js.requireStack = [];
 shadow.js.add_native_require = function(name, obj) {
   shadow.js.nativeRequires[name] = obj;
 };
+shadow.js.exportCopy = function(module, other) {
+  let copy = {};
+  let exports = module["exports"];
+  for (let key in other) {
+    if (key == "default" || key in exports || key in copy) {
+      continue;
+    }
+    copy[key] = {enumerable:true, get:function() {
+      return other[key];
+    }};
+  }
+  Object.defineProperties(exports, copy);
+};
 shadow.js.jsRequire = function(name, opts) {
   var nativeObj = shadow.js.nativeRequires[name];
   if (nativeObj !== undefined) {
@@ -50,9 +63,13 @@ shadow.js.jsRequire = function(name, opts) {
   }
   return module["exports"];
 };
-shadow.js.jsRequire.cache = {};
-shadow.js.jsRequire.resolve = function(name) {
+shadow.js.jsRequire["cache"] = {};
+shadow.js.jsRequire["resolve"] = function(name) {
   return name;
+};
+shadow.js.jsRequire["exportCopy"] = shadow.js.exportCopy;
+shadow.js.jsRequire["esmDefault"] = function(mod) {
+  return mod && mod["__esModule"] ? mod : {"default":mod};
 };
 shadow.js.modules = {};
 shadow.js.require = function(name, opts) {
