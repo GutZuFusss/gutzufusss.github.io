@@ -32,10 +32,10 @@ return openllm.api.log4cljs.core.log.cljs$core$IFn$_invoke$arity$variadic(new cl
  * direct side effects.
  */
 openllm.api.indexed_db.core.create_transaction = (function openllm$api$indexed_db$core$create_transaction(obj_store_fqn,mode){
-var map__36590 = obj_store_fqn;
-var map__36590__$1 = cljs.core.__destructure_map(map__36590);
-var db_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36590__$1,new cljs.core.Keyword(null,"db-name","db-name",1157928745));
-var os_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36590__$1,new cljs.core.Keyword(null,"os-name","os-name",-2109973734));
+var map__36218 = obj_store_fqn;
+var map__36218__$1 = cljs.core.__destructure_map(map__36218);
+var db_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36218__$1,new cljs.core.Keyword(null,"db-name","db-name",1157928745));
+var os_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36218__$1,new cljs.core.Keyword(null,"os-name","os-name",-2109973734));
 var db = cljs.core.get.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(openllm.api.indexed_db.core.name__GT_db),db_name);
 var transaction = db.transaction([os_name],mode);
 (transaction.onerror = openllm.api.indexed_db.core.idb_error_callback);
@@ -70,9 +70,9 @@ openllm.api.log4cljs.core.log.cljs$core$IFn$_invoke$arity$variadic(new cljs.core
 } else {
 openllm.api.log4cljs.core.log.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"info","info",-317069002),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([["Database and object store created. Current database version is ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(db.version),"."].join('')], 0));
 
-var G__36593_36702 = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db-name","db-name",1157928745),db,new cljs.core.Keyword(null,"os-name","os-name",-2109973734),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_info)], null);
-var G__36594_36703 = table_info;
-(openllm.api.indexed_db.core.create_object_store_BANG_.cljs$core$IFn$_invoke$arity$2 ? openllm.api.indexed_db.core.create_object_store_BANG_.cljs$core$IFn$_invoke$arity$2(G__36593_36702,G__36594_36703) : openllm.api.indexed_db.core.create_object_store_BANG_.call(null,G__36593_36702,G__36594_36703));
+var G__36230_36380 = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"db-name","db-name",1157928745),db,new cljs.core.Keyword(null,"os-name","os-name",-2109973734),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_info)], null);
+var G__36231_36381 = table_info;
+(openllm.api.indexed_db.core.create_object_store_BANG_.cljs$core$IFn$_invoke$arity$2 ? openllm.api.indexed_db.core.create_object_store_BANG_.cljs$core$IFn$_invoke$arity$2(G__36230_36380,G__36231_36381) : openllm.api.indexed_db.core.create_object_store_BANG_.call(null,G__36230_36380,G__36231_36381));
 }
 
 return null;
@@ -84,8 +84,8 @@ return null;
  * Returns `nil`.
  */
 openllm.api.indexed_db.core.on_initialize_success_BANG_ = (function openllm$api$indexed_db$core$on_initialize_success_BANG_(db_name,user_callback,e){
-var db_36704 = e.target.result;
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(openllm.api.indexed_db.core.name__GT_db,cljs.core.assoc,db_name,db_36704);
+var db_36383 = e.target.result;
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(openllm.api.indexed_db.core.name__GT_db,cljs.core.assoc,db_name,db_36383);
 
 (user_callback.cljs$core$IFn$_invoke$arity$0 ? user_callback.cljs$core$IFn$_invoke$arity$0() : user_callback.call(null));
 
@@ -113,31 +113,31 @@ return null;
  * so that it can be used right away.
  */
 openllm.api.indexed_db.core.create_object_store_BANG_ = (function openllm$api$indexed_db$core$create_object_store_BANG_(obj_store_fqn,table_info){
-var map__36602 = obj_store_fqn;
-var map__36602__$1 = cljs.core.__destructure_map(map__36602);
-var db_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36602__$1,new cljs.core.Keyword(null,"db-name","db-name",1157928745));
-var os_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36602__$1,new cljs.core.Keyword(null,"os-name","os-name",-2109973734));
+var map__36242 = obj_store_fqn;
+var map__36242__$1 = cljs.core.__destructure_map(map__36242);
+var db_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36242__$1,new cljs.core.Keyword(null,"db-name","db-name",1157928745));
+var os_name = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36242__$1,new cljs.core.Keyword(null,"os-name","os-name",-2109973734));
 var db = cljs.core.get.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(openllm.api.indexed_db.core.name__GT_db),db_name);
 var object_store = db.createObjectStore(os_name,({"keyPath": "id", "autoIncrement": true}));
-var iter__5523__auto___36707 = (function openllm$api$indexed_db$core$create_object_store_BANG__$_iter__36604(s__36605){
+var iter__5523__auto___36384 = (function openllm$api$indexed_db$core$create_object_store_BANG__$_iter__36243(s__36244){
 return (new cljs.core.LazySeq(null,(function (){
-var s__36605__$1 = s__36605;
+var s__36244__$1 = s__36244;
 while(true){
-var temp__5753__auto__ = cljs.core.seq(s__36605__$1);
-if(temp__5753__auto__){
-var s__36605__$2 = temp__5753__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__36605__$2)){
-var c__5521__auto__ = cljs.core.chunk_first(s__36605__$2);
+var temp__5804__auto__ = cljs.core.seq(s__36244__$1);
+if(temp__5804__auto__){
+var s__36244__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__36244__$2)){
+var c__5521__auto__ = cljs.core.chunk_first(s__36244__$2);
 var size__5522__auto__ = cljs.core.count(c__5521__auto__);
-var b__36607 = cljs.core.chunk_buffer(size__5522__auto__);
-if((function (){var i__36606 = (0);
+var b__36246 = cljs.core.chunk_buffer(size__5522__auto__);
+if((function (){var i__36245 = (0);
 while(true){
-if((i__36606 < size__5522__auto__)){
-var table_idx = cljs.core._nth(c__5521__auto__,i__36606);
-cljs.core.chunk_append(b__36607,object_store.createIndex(new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),({"unique": new cljs.core.Keyword(null,"unique","unique",329397282).cljs$core$IFn$_invoke$arity$1(table_idx)})));
+if((i__36245 < size__5522__auto__)){
+var table_idx = cljs.core._nth(c__5521__auto__,i__36245);
+cljs.core.chunk_append(b__36246,object_store.createIndex(new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),({"unique": new cljs.core.Keyword(null,"unique","unique",329397282).cljs$core$IFn$_invoke$arity$1(table_idx)})));
 
-var G__36712 = (i__36606 + (1));
-i__36606 = G__36712;
+var G__36391 = (i__36245 + (1));
+i__36245 = G__36391;
 continue;
 } else {
 return true;
@@ -145,13 +145,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__36607),openllm$api$indexed_db$core$create_object_store_BANG__$_iter__36604(cljs.core.chunk_rest(s__36605__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__36246),openllm$api$indexed_db$core$create_object_store_BANG__$_iter__36243(cljs.core.chunk_rest(s__36244__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__36607),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__36246),null);
 }
 } else {
-var table_idx = cljs.core.first(s__36605__$2);
-return cljs.core.cons(object_store.createIndex(new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),({"unique": new cljs.core.Keyword(null,"unique","unique",329397282).cljs$core$IFn$_invoke$arity$1(table_idx)})),openllm$api$indexed_db$core$create_object_store_BANG__$_iter__36604(cljs.core.rest(s__36605__$2)));
+var table_idx = cljs.core.first(s__36244__$2);
+return cljs.core.cons(object_store.createIndex(new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(table_idx),({"unique": new cljs.core.Keyword(null,"unique","unique",329397282).cljs$core$IFn$_invoke$arity$1(table_idx)})),openllm$api$indexed_db$core$create_object_store_BANG__$_iter__36243(cljs.core.rest(s__36244__$2)));
 }
 } else {
 return null;
@@ -160,7 +160,7 @@ break;
 }
 }),null,null));
 });
-iter__5523__auto___36707(new cljs.core.Keyword(null,"index","index",-1531685915).cljs$core$IFn$_invoke$arity$1(table_info));
+iter__5523__auto___36384(new cljs.core.Keyword(null,"index","index",-1531685915).cljs$core$IFn$_invoke$arity$1(table_info));
 
 return (object_store.transaction.oncomplete = (function (){
 return db.transaction(os_name,"readwrite").objectStore(os_name);
@@ -174,8 +174,8 @@ return db.transaction(os_name,"readwrite").objectStore(os_name);
  * Returns `nil`.
  */
 openllm.api.indexed_db.core.os_add_BANG_ = (function openllm$api$indexed_db$core$os_add_BANG_(obj_store_fqn,entry){
-var object_store_36713 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readwrite");
-object_store_36713.put(cljs.core.clj__GT_js(entry));
+var object_store_36393 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readwrite");
+object_store_36393.put(cljs.core.clj__GT_js(entry));
 
 return null;
 });
@@ -208,8 +208,8 @@ return null;
 } else {
 openllm.api.indexed_db.core.os_add_BANG_(obj_store_fqn,cljs.core.first(entries__$1));
 
-var G__36720 = cljs.core.rest(entries__$1);
-entries__$1 = G__36720;
+var G__36397 = cljs.core.rest(entries__$1);
+entries__$1 = G__36397;
 continue;
 }
 break;
@@ -226,13 +226,13 @@ break;
  * Returns `nil`.
  */
 openllm.api.indexed_db.core.os_index__GT_object = (function openllm$api$indexed_db$core$os_index__GT_object(obj_store_fqn,idx,callback_fn){
-var object_store_36723 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readonly");
-var request_36724 = object_store_36723.get(idx);
-(request_36724.onerror = openllm.api.indexed_db.core.idb_error_callback);
+var object_store_36399 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readonly");
+var request_36400 = object_store_36399.get(idx);
+(request_36400.onerror = openllm.api.indexed_db.core.idb_error_callback);
 
-(request_36724.onsuccess = (function (e){
-var G__36615 = e.target.result;
-return (callback_fn.cljs$core$IFn$_invoke$arity$1 ? callback_fn.cljs$core$IFn$_invoke$arity$1(G__36615) : callback_fn.call(null,G__36615));
+(request_36400.onsuccess = (function (e){
+var G__36300 = e.target.result;
+return (callback_fn.cljs$core$IFn$_invoke$arity$1 ? callback_fn.cljs$core$IFn$_invoke$arity$1(G__36300) : callback_fn.call(null,G__36300));
 }));
 
 return null;
@@ -252,20 +252,20 @@ return null;
  * Returns `nil`.
  */
 openllm.api.indexed_db.core.os_get_all = (function openllm$api$indexed_db$core$os_get_all(obj_store_fqn,callback_fn){
-var values_36729 = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentVector.EMPTY);
-var request_36730 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readonly").openCursor();
-(request_36730.onerror = openllm.api.indexed_db.core.idb_error_callback);
+var values_36404 = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentVector.EMPTY);
+var request_36405 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readonly").openCursor();
+(request_36405.onerror = openllm.api.indexed_db.core.idb_error_callback);
 
-(request_36730.onsuccess = (function (e){
-var temp__5751__auto__ = e.target.result;
-if(cljs.core.truth_(temp__5751__auto__)){
-var cursor = temp__5751__auto__;
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(values_36729,cljs.core.conj,cursor.value);
+(request_36405.onsuccess = (function (e){
+var temp__5802__auto__ = e.target.result;
+if(cljs.core.truth_(temp__5802__auto__)){
+var cursor = temp__5802__auto__;
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(values_36404,cljs.core.conj,cursor.value);
 
 return cursor.continue();
 } else {
-var G__36655 = cljs.core.deref(values_36729);
-return (callback_fn.cljs$core$IFn$_invoke$arity$1 ? callback_fn.cljs$core$IFn$_invoke$arity$1(G__36655) : callback_fn.call(null,G__36655));
+var G__36314 = cljs.core.deref(values_36404);
+return (callback_fn.cljs$core$IFn$_invoke$arity$1 ? callback_fn.cljs$core$IFn$_invoke$arity$1(G__36314) : callback_fn.call(null,G__36314));
 }
 }));
 
@@ -280,15 +280,15 @@ return null;
  * Returns `nil`.
  */
 openllm.api.indexed_db.core.wipe_object_store_BANG_ = (function openllm$api$indexed_db$core$wipe_object_store_BANG_(obj_store_fqn){
-var object_store_36735 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readwrite");
-var transaction_36736 = object_store_36735.transaction;
-(transaction_36736.oncomplete = (function (){
+var object_store_36410 = openllm.api.indexed_db.core.create_transaction(obj_store_fqn,"readwrite");
+var transaction_36411 = object_store_36410.transaction;
+(transaction_36411.oncomplete = (function (){
 return openllm.api.log4cljs.core.log.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"info","info",-317069002),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Object store wiped."], 0));
 }));
 
-(transaction_36736.onerror = openllm.api.indexed_db.core.idb_error_callback);
+(transaction_36411.onerror = openllm.api.indexed_db.core.idb_error_callback);
 
-object_store_36735.clear();
+object_store_36410.clear();
 
 return null;
 });
@@ -328,8 +328,8 @@ return null;
  * Returns `nil`.
  */
 openllm.api.indexed_db.core.initialize_BANG_ = (function openllm$api$indexed_db$core$initialize_BANG_(var_args){
-var G__36691 = arguments.length;
-switch (G__36691) {
+var G__36330 = arguments.length;
+switch (G__36330) {
 case 2:
 return openllm.api.indexed_db.core.initialize_BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -357,17 +357,17 @@ return openllm.api.indexed_db.core.initialize_BANG_.cljs$core$IFn$_invoke$arity$
 }));
 
 (openllm.api.indexed_db.core.initialize_BANG_.cljs$core$IFn$_invoke$arity$4 = (function (db_info,table_info,success_callback,on_upgrade_db_version){
-var map__36695_36745 = db_info;
-var map__36695_36746__$1 = cljs.core.__destructure_map(map__36695_36745);
-var db_name_36747 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36695_36746__$1,new cljs.core.Keyword(null,"db-name","db-name",1157928745));
-var db_version_36748 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36695_36746__$1,new cljs.core.Keyword(null,"db-version","db-version",2088342971));
-var upgrade_callback_BANG__36749 = cljs.core.partial.cljs$core$IFn$_invoke$arity$3(openllm.api.indexed_db.core.on_upgrade_needed_BANG_,table_info,on_upgrade_db_version);
-var request_36750 = window.indexedDB.open(db_name_36747,db_version_36748);
-(request_36750.onerror = openllm.api.indexed_db.core.idb_error_callback);
+var map__36339_36430 = db_info;
+var map__36339_36431__$1 = cljs.core.__destructure_map(map__36339_36430);
+var db_name_36432 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36339_36431__$1,new cljs.core.Keyword(null,"db-name","db-name",1157928745));
+var db_version_36433 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36339_36431__$1,new cljs.core.Keyword(null,"db-version","db-version",2088342971));
+var upgrade_callback_BANG__36434 = cljs.core.partial.cljs$core$IFn$_invoke$arity$3(openllm.api.indexed_db.core.on_upgrade_needed_BANG_,table_info,on_upgrade_db_version);
+var request_36435 = window.indexedDB.open(db_name_36432,db_version_36433);
+(request_36435.onerror = openllm.api.indexed_db.core.idb_error_callback);
 
-(request_36750.onupgradeneeded = upgrade_callback_BANG__36749);
+(request_36435.onupgradeneeded = upgrade_callback_BANG__36434);
 
-(request_36750.onsuccess = cljs.core.partial.cljs$core$IFn$_invoke$arity$3(openllm.api.indexed_db.core.on_initialize_success_BANG_,db_name_36747,success_callback));
+(request_36435.onsuccess = cljs.core.partial.cljs$core$IFn$_invoke$arity$3(openllm.api.indexed_db.core.on_initialize_success_BANG_,db_name_36432,success_callback));
 
 return null;
 }));

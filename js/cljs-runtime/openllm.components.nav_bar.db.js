@@ -7,14 +7,14 @@ goog.provide('openllm.components.nav_bar.db');
  */
 openllm.components.nav_bar.db.key_seq = (function openllm$components$nav_bar$db$key_seq(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___38914 = arguments.length;
-var i__5770__auto___38915 = (0);
+var len__5769__auto___38686 = arguments.length;
+var i__5770__auto___38687 = (0);
 while(true){
-if((i__5770__auto___38915 < len__5769__auto___38914)){
-args__5775__auto__.push((arguments[i__5770__auto___38915]));
+if((i__5770__auto___38687 < len__5769__auto___38686)){
+args__5775__auto__.push((arguments[i__5770__auto___38687]));
 
-var G__38916 = (i__5770__auto___38915 + (1));
-i__5770__auto___38915 = G__38916;
+var G__38688 = (i__5770__auto___38687 + (1));
+i__5770__auto___38687 = G__38688;
 continue;
 } else {
 }
@@ -32,13 +32,13 @@ return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVect
 (openllm.components.nav_bar.db.key_seq.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(openllm.components.nav_bar.db.key_seq.cljs$lang$applyTo = (function (seq38899){
+(openllm.components.nav_bar.db.key_seq.cljs$lang$applyTo = (function (seq38675){
 var self__5755__auto__ = this;
-return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq38899));
+return self__5755__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq38675));
 }));
 
-cljs.spec.alpha.def_impl(new cljs.core.Keyword("openllm.components.nav-bar.db","nav-bar-db","openllm.components.nav-bar.db/nav-bar-db",-84263152),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","and","cljs.core/and",-6692549,null),cljs.core.list(new cljs.core.Symbol("cljs.core","map?","cljs.core/map?",-1390345523,null),new cljs.core.Symbol(null,"%","%",-950237169,null)),cljs.core.list(new cljs.core.Symbol("cljs.core","empty?","cljs.core/empty?",1866613644,null),new cljs.core.Symbol(null,"%","%",-950237169,null)))),(function (p1__38905_SHARP_){
-return ((cljs.core.map_QMARK_(p1__38905_SHARP_)) && (cljs.core.empty_QMARK_(p1__38905_SHARP_)));
+cljs.spec.alpha.def_impl(new cljs.core.Keyword("openllm.components.nav-bar.db","nav-bar-db","openllm.components.nav-bar.db/nav-bar-db",-84263152),cljs.core.list(new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"%","%",-950237169,null)], null),cljs.core.list(new cljs.core.Symbol("cljs.core","and","cljs.core/and",-6692549,null),cljs.core.list(new cljs.core.Symbol("cljs.core","map?","cljs.core/map?",-1390345523,null),new cljs.core.Symbol(null,"%","%",-950237169,null)),cljs.core.list(new cljs.core.Symbol("cljs.core","empty?","cljs.core/empty?",1866613644,null),new cljs.core.Symbol(null,"%","%",-950237169,null)))),(function (p1__38682_SHARP_){
+return ((cljs.core.map_QMARK_(p1__38682_SHARP_)) && (cljs.core.empty_QMARK_(p1__38682_SHARP_)));
 }));
 /**
  * Initial values for this branch of the app-db.

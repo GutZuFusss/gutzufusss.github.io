@@ -7,10 +7,10 @@ re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword
 return model_params_db;
 })], 0));
 re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("openllm.components.side-bar.model-params.subs","human-readable-config","openllm.components.side-bar.model-params.subs/human-readable-config",215692576),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-params.subs","model-config","openllm.components.side-bar.model-params.subs/model-config",2080539653)], null),(function (model_config,_){
-return cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__40092){
-var vec__40093 = p__40092;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40093,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40093,(1),null);
+return cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__40156){
+var vec__40157 = p__40156;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40157,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40157,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"name","name",1843675177),(openllm.components.side_bar.model_params.subs.parameter_id__GT_human_readable.cljs$core$IFn$_invoke$arity$1 ? openllm.components.side_bar.model_params.subs.parameter_id__GT_human_readable.cljs$core$IFn$_invoke$arity$1(k) : openllm.components.side_bar.model_params.subs.parameter_id__GT_human_readable.call(null,k)),new cljs.core.Keyword(null,"value","value",305978217),v], null)], null);
 }),model_config));
 })], 0));

@@ -2,10 +2,10 @@ goog.provide('openllm.api.components');
 /**
  * The file upload reagent custom component.
  */
-openllm.api.components.file_upload_button = (function openllm$api$components$file_upload_button(p__28702){
-var map__28703 = p__28702;
-var map__28703__$1 = cljs.core.__destructure_map(map__28703);
-var callback_event = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__28703__$1,new cljs.core.Keyword(null,"callback-event","callback-event",-861154138));
+openllm.api.components.file_upload_button = (function openllm$api$components$file_upload_button(p__40209){
+var map__40210 = p__40209;
+var map__40210__$1 = cljs.core.__destructure_map(map__40210);
+var callback_event = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40210__$1,new cljs.core.Keyword(null,"callback-event","callback-event",-861154138));
 var file_reader = (new FileReader());
 return reagent.core.create_class.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component-did-mount","component-did-mount",-1126910518),(function (_){
 return file_reader.addEventListener("load",(function (evt){

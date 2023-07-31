@@ -21,14 +21,14 @@ return ["Prompt: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(prompt),"\n\n\n",
 });
 re_frame.core.reg_event_fx.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword("openllm.components.nav-bar.events","export-button-clicked","openllm.components.nav-bar.events/export-button-clicked",-821141632),(function (cofx,_){
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"dispatch-sync","dispatch-sync",1664398243),true,new cljs.core.Keyword(null,"fx","fx",-1237829572),(function (){var active_screen = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cofx,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"db","db",993250759),new cljs.core.Keyword(null,"screen-id","screen-id",9826069)], null));
-var pred__39174 = cljs.core._EQ_;
-var expr__39175 = active_screen;
-if(cljs.core.truth_((pred__39174.cljs$core$IFn$_invoke$arity$2 ? pred__39174.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"playground","playground",688158191),expr__39175) : pred__39174.call(null,new cljs.core.Keyword(null,"playground","playground",688158191),expr__39175)))){
+var pred__39200 = cljs.core._EQ_;
+var expr__39201 = active_screen;
+if(cljs.core.truth_((pred__39200.cljs$core$IFn$_invoke$arity$2 ? pred__39200.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"playground","playground",688158191),expr__39201) : pred__39200.call(null,new cljs.core.Keyword(null,"playground","playground",688158191),expr__39201)))){
 var input_value = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cofx,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"db","db",993250759),new cljs.core.Keyword(null,"playground-input-value","playground-input-value",1271962687)], null));
 var response_value = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cofx,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"db","db",993250759),new cljs.core.Keyword(null,"playground-last-response","playground-last-response",952245930)], null));
 return openllm.components.nav_bar.events.start_download_BANG_("export-playground.txt",openllm.components.nav_bar.events.build_playground_export_contents(input_value,response_value));
 } else {
-if(cljs.core.truth_((pred__39174.cljs$core$IFn$_invoke$arity$2 ? pred__39174.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"chat","chat",-518268339),expr__39175) : pred__39174.call(null,new cljs.core.Keyword(null,"chat","chat",-518268339),expr__39175)))){
+if(cljs.core.truth_((pred__39200.cljs$core$IFn$_invoke$arity$2 ? pred__39200.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"chat","chat",-518268339),expr__39201) : pred__39200.call(null,new cljs.core.Keyword(null,"chat","chat",-518268339),expr__39201)))){
 var chat_history = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cofx,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"db","db",993250759),new cljs.core.Keyword(null,"chat-history","chat-history",912746146)], null));
 return openllm.components.nav_bar.events.start_download_BANG_("export-chat.txt",openllm.util.chat_history__GT_string(chat_history));
 } else {

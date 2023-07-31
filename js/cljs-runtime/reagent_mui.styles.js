@@ -8,8 +8,8 @@ reagent_mui.styles.experimental_css_vars_provider_STAR_ = reagent.core.adapt_rea
  * Note: input component has to take all its props (including children) in a single map.
  */
 reagent_mui.styles.styled = (function reagent_mui$styles$styled(var_args){
-var G__40158 = arguments.length;
-switch (G__40158) {
+var G__40216 = arguments.length;
+switch (G__40216) {
 case 2:
 return reagent_mui.styles.styled.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -31,8 +31,8 @@ return reagent_mui.styles.styled.cljs$core$IFn$_invoke$arity$3(component,cljs.co
 (reagent_mui.styles.styled.cljs$core$IFn$_invoke$arity$3 = (function (component,opts,styles){
 var react_component = ((typeof component === 'string')?component:reagent_mui.util.reactify_component(component));
 var styled_component = module$node_modules$$mui$material$node$styles$index.styled(react_component,cljs.core.clj__GT_js(opts));
-return reagent.core.adapt_react_class((function (){var G__40159 = reagent_mui.util.wrap_styles(styles);
-return (styled_component.cljs$core$IFn$_invoke$arity$1 ? styled_component.cljs$core$IFn$_invoke$arity$1(G__40159) : styled_component.call(null,G__40159));
+return reagent.core.adapt_react_class((function (){var G__40219 = reagent_mui.util.wrap_styles(styles);
+return (styled_component.cljs$core$IFn$_invoke$arity$1 ? styled_component.cljs$core$IFn$_invoke$arity$1(G__40219) : styled_component.call(null,G__40219));
 })());
 }));
 
@@ -44,8 +44,8 @@ return (styled_component.cljs$core$IFn$_invoke$arity$1 ? styled_component.cljs$c
  * See: https://mui.com/material-ui/customization/theming/#responsivefontsizes-theme-options-theme
  */
 reagent_mui.styles.responsive_font_sizes = (function reagent_mui$styles$responsive_font_sizes(var_args){
-var G__40161 = arguments.length;
-switch (G__40161) {
+var G__40221 = arguments.length;
+switch (G__40221) {
 case 1:
 return reagent_mui.styles.responsive_font_sizes.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -83,14 +83,14 @@ return reagent_mui.util.js__GT_clj_SINGLEQUOTE_(module$node_modules$$mui$materia
  */
 reagent_mui.styles.theme_provider = (function reagent_mui$styles$theme_provider(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___40168 = arguments.length;
-var i__5770__auto___40169 = (0);
+var len__5769__auto___40233 = arguments.length;
+var i__5770__auto___40234 = (0);
 while(true){
-if((i__5770__auto___40169 < len__5769__auto___40168)){
-args__5775__auto__.push((arguments[i__5770__auto___40169]));
+if((i__5770__auto___40234 < len__5769__auto___40233)){
+args__5775__auto__.push((arguments[i__5770__auto___40234]));
 
-var G__40170 = (i__5770__auto___40169 + (1));
-i__5770__auto___40169 = G__40170;
+var G__40235 = (i__5770__auto___40234 + (1));
+i__5770__auto___40234 = G__40235;
 continue;
 } else {
 }
@@ -108,11 +108,11 @@ return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVect
 (reagent_mui.styles.theme_provider.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(reagent_mui.styles.theme_provider.cljs$lang$applyTo = (function (seq40162){
-var G__40163 = cljs.core.first(seq40162);
-var seq40162__$1 = cljs.core.next(seq40162);
+(reagent_mui.styles.theme_provider.cljs$lang$applyTo = (function (seq40223){
+var G__40224 = cljs.core.first(seq40223);
+var seq40223__$1 = cljs.core.next(seq40223);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__40163,seq40162__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__40224,seq40223__$1);
 }));
 
 /**
@@ -125,14 +125,14 @@ return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__40163,seq40162
  */
 reagent_mui.styles.experimental_css_vars_provider = (function reagent_mui$styles$experimental_css_vars_provider(var_args){
 var args__5775__auto__ = [];
-var len__5769__auto___40171 = arguments.length;
-var i__5770__auto___40172 = (0);
+var len__5769__auto___40244 = arguments.length;
+var i__5770__auto___40245 = (0);
 while(true){
-if((i__5770__auto___40172 < len__5769__auto___40171)){
-args__5775__auto__.push((arguments[i__5770__auto___40172]));
+if((i__5770__auto___40245 < len__5769__auto___40244)){
+args__5775__auto__.push((arguments[i__5770__auto___40245]));
 
-var G__40173 = (i__5770__auto___40172 + (1));
-i__5770__auto___40172 = G__40173;
+var G__40246 = (i__5770__auto___40245 + (1));
+i__5770__auto___40245 = G__40246;
 continue;
 } else {
 }
@@ -150,11 +150,11 @@ return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVect
 (reagent_mui.styles.experimental_css_vars_provider.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(reagent_mui.styles.experimental_css_vars_provider.cljs$lang$applyTo = (function (seq40164){
-var G__40165 = cljs.core.first(seq40164);
-var seq40164__$1 = cljs.core.next(seq40164);
+(reagent_mui.styles.experimental_css_vars_provider.cljs$lang$applyTo = (function (seq40225){
+var G__40226 = cljs.core.first(seq40225);
+var seq40225__$1 = cljs.core.next(seq40225);
 var self__5754__auto__ = this;
-return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__40165,seq40164__$1);
+return self__5754__auto__.cljs$core$IFn$_invoke$arity$variadic(G__40226,seq40225__$1);
 }));
 
 /**
