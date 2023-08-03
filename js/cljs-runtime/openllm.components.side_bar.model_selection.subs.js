@@ -15,10 +15,10 @@ re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.keys(all_models_data),openllm.components.side_bar.model_selection.db.loading_text);
 })], 0));
 re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("openllm.components.side-bar.model-selection.subs","all-model-ids","openllm.components.side-bar.model-selection.subs/all-model-ids",-1365811858),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"<-","<-",760412998),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("openllm.components.side-bar.model-selection.subs","all-models-data","openllm.components.side-bar.model-selection.subs/all-models-data",698718291)], null),(function (all_models_data,_){
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.vec(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,cljs.core.mapv.cljs$core$IFn$_invoke$arity$2((function (p__29224){
-var vec__29225 = p__29224;
-var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29225,(0),null);
-var model_type = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29225,(1),null);
+return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.vec(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,cljs.core.mapv.cljs$core$IFn$_invoke$arity$2((function (p__28786){
+var vec__28787 = p__28786;
+var ___$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28787,(0),null);
+var model_type = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__28787,(1),null);
 return new cljs.core.Keyword(null,"model_id","model_id",-2010580717).cljs$core$IFn$_invoke$arity$1(model_type);
 }),all_models_data))),openllm.components.side_bar.model_selection.db.loading_text);
 })], 0));
